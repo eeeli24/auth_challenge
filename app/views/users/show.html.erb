@@ -1,4 +1,14 @@
-<%= @user.name %>
-<%= @user.email %>
-<%= @user.phone_number %>
-<%= user_status(@user) %>
+<ul class='list-group'>
+  <li class='list-group-item'>
+    <%= @user.name %>
+  </li>
+  <li class='list-group-item'>
+    <%= @user.email %>
+  </li>
+  <li class='list-group-item'>
+    <%= @user.phone_number %>
+  </li>
+  <li class='list-group-item'>
+    <%= user_status(@user) %>
+  </li>
+</ul>
