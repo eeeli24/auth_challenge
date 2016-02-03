@@ -13,4 +13,8 @@ class User < ActiveRecord::Base
   def inactive_message
     "Inactive user, can't login"
   end
+
+  def name
+    "#{first_name} #{second_name}"
+  end
 end
